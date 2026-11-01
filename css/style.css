@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --white-color:#ffffff;
+    --milk-color:#f8f9fa;
+    --gray-color:#808080;
+    --red-color:#ff0000;
+}
+
+::selection{
+    background: var(--red-color);
+    color:var(--white-color);
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+     background:var(--milk-color);
+     display:flex;
+     justify-content: center;
+}
+nav{
+   /* background: cyan; */
+   width: 85%;
+   height:70px;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.navbar{
+    display: flex;
+    gap:1.2rem;
+    list-style-type:none ;
+}
+nav .logo{
+    color: var(--gray-color);
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar .nav-link{
+     color: var(--gray-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 12px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.navbar .nav-link:hover{
+    background:var(--red-color);
+    color: var(--white-color);
+    
+}
+.navbar .active{
+    background: var(--red-color);
+    color: var(--white-color);
+}
+/* Product Section */
+#product-section{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+.product-container{
+    width: 85%;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.product-card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.product-card{
+   box-shadow: 2px 2px 5px var(--gray-color);
+   padding:5px;
+   border-radius: 5px;
+}
+.product-card .details{
+    padding: 15px;
+
+}
+.product-card .details{
+    color:var(--gray-color);
+    font-weight: bold;
+
+}
+.product-card .details h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.product-card .details p{
+    color: var(--red-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.product-card .image{
+    position:relative;
+}
+.product-card .image .cart_icon{
+    position:absolute;
+    top:10px;
+    right:10px;
+    background:var(--white-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+/* Slider */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* About section */
+#about-section{
+    padding:3rem 0;
+    display:flex;
+    justify-content: center;
+}
+.about-container{
+    width:85%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:2rem;
+}
+.about-container img{
+    width:100%;
+    border-radius: 1rem;
+}
+.about-container .right{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-container .right small{
+    font-weight: bold;
+    color:var(--red-color);
+}
+.about-container .right h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.about-container .right p{
+    color:var(--gray-color);
+    line-height: 2rem;
+}
+#service-section{
+    /* background-color:var(--red-color); */
+    padding:3rem 0;
+    display: flex;
+    justify-content: center;
+}
+.service_container{
+    /* background-color:aqua; */
+    width:85%;
+    text-align: center;
+}
+.service_cards{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 3rem;
+}
+.service_cards .card{
+    box-shadow: 2px 2px 2px  var(--gray-color);
+    padding:1.5rem 0;
+    border-radius: 1rem;
+    line-height: 3rem;
+    margin-top:3rem;
+}
+.service_cards .card i{
+    font-size: 3rem;
+    color:var(--red-color);
+}
+.service_cards .card p{
+    color:var(--gray-color);
+}
+/*  */
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.service_container h1{
+    animation:rotate-vert-center 5s infinite;
+}
+/* Contact Section */
+#contact-section{
+    padding:3rem 0;
+    display:flex;
+    justify-content: center;
+    
+}
+.contact-container{
+    width:85%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1rem;
+}
+.contact-container .left h1{
+    font-size: 3rem;
+    color:red;
+    margin-bottom: 2rem;
+}
+.contact-container .left p{
+    color:var(--gray-color);
+}
+.info-item{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    margin:3rem 0; 
+}
+.info-item i{
+    color:var(--red-color);
+    background-color: var(--milk-color);
+    padding:1rem;
+    border-radius: 8px;
+}
+.contact-container .right{
+    padding:3rem;
+    border:1px solid var(--red-color);
+    box-shadow: 0 10px 25px var(--gray-color);
+    border-radius: 1rem;
+}
+.contact-container .right input,
+.contact-container .right select,
+.contact-container .right textarea{
+    width:100%;
+    padding:12px 16px;
+    border-radius: 8px;
+    background: var(--milk-color);
+    box-sizing: border-box;
+    border: none;
+    outline: 2px solid var(--gray-color);
+}
+.contact-container .right input:focus{
+    outline: 2px solid var(--red-color);
+    border: none;
+}
+.contact-container .right .form-group{
+    margin-top: 2rem;
+}
+.contact-container .right button{
+    width:100%;
+    padding:14px;
+    background: var(--red-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color:var(--white-color);
+    cursor: pointer;
+}
+.contact-container .right .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1rem;
+}
+/* Footer */
+footer{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid var(--gray-color);
+}
+@media(max-width:900px){
+    .about-container{
+        grid-template-columns: 1fr;
+    }
+    .service_cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .product-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contact-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:500px){
+    .service_cards{
+        grid-template-columns: 1fr;
+    }
+    .product-container{
+        grid-template-columns:1fr;
+    }
+}

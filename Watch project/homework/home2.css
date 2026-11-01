@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Isometra&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+}
+nav .navbar{
+    display: flex;
+    justify-content: center;
+    gap: 4.2rem;
+    margin-top: 10px;
+    list-style-type: none;    
+}
+nav .navbar .navitem:hover{
+    color: white;
+    background-color: rgb(48, 115, 173);
+    border-radius: 20px;
+    padding:10px;
+}
+nav .navbar .navitem{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    font-family: "Poppins", sans-serif;
+    transition: 1.3s;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding:1rem;
+} 
+.list{
+    width:85%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10rem;
+    margin: 10px;
+}
+.country{
+   padding:10px;
+   border-radius: 10px;
+   margin-top:100px;
+   box-shadow: 2px 2px 5px black;
+   /* margin-right: 20px; */
+}
+.country img{
+    width: 100%;
+    border-radius: 20px;
+}
+.country.detail{
+    font-weight: bold;
+}
+.country .detail h4{
+    color:black;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.country .detail .visit{
+    border-radius: 20px;
+    padding:10px;
+    background-color: rgb(196, 168, 134);
+
+}
+.detail p{
+    font-size: larger;
+    font-family: fantasy;
+}
